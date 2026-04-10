@@ -1,0 +1,52 @@
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+minimal_mistakes_skin: "default"
+
+locale: "ko-KR"
+title: "쇼핑 추천 TOP10"
+subtitle: "데이터 기반 인기상품 추천"
+name: "Moon"
+description: "네이버 데이터랩 & 아이템스카우트 데이터 기반 쿠팡 인기상품 TOP10 추천"
+url: "https://daechanlife81.github.io"
+
+repository: "daechanlife81/daechanlife81.github.io"
+
+teaser: /assets/images/default-teaser.png
+
+search: true
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+author:
+  name: "Moon"
+  bio: "데이터 기반 쇼핑 추천"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      show_date: true
+      toc: false
+
+category_archive:
+  type: liquid
+  path: /categories/
+
+tag_archive:
+  type: liquid
+  path: /tags/
+
+paginate: 12
+paginate_path: /page:num/
